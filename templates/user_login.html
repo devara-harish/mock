@@ -1,0 +1,28 @@
+{% extends 'app1/sample.html' %}
+{% block title %}
+    <title>login</title>
+{% endblock %}
+
+{% block body_block %}
+<center>
+<form method="POST">
+
+    {% csrf_token %}
+
+    <h2>Login Here</h2>
+    
+        <label for="username" class="fas fa-user">Username </label>
+            <input type="text" name="username" id="username"><br>
+    
+    
+    
+        <label for="password" class="fas fa-low-vision">Password </label>
+            <input type="password" name="password" id="password"><br>
+
+    <input type="submit" value="Login">
+     
+    
+    </center>        
+   
+</form>
+{% endblock %}

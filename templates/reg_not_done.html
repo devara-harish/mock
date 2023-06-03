@@ -1,0 +1,16 @@
+{% extends 'app1/sample.html' %}
+
+
+{% block title  %}
+    <title>Error</title>
+{% endblock  %}
+
+
+{% block body_block %}
+<center>
+   
+  <h1>  Your not Registered</h1 >
+    
+  <a href="{% url 'registration' %}">Register here</a>   
+</center>
+{% endblock  %}

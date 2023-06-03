@@ -1,0 +1,29 @@
+{% extends 'app1/sample.html' %}
+
+{% block title %}
+    <title>Home Page</title>
+{% endblock %}
+
+{% block body_block  %}
+<center>
+
+<h2> {{Qcl.title}}</h2>
+
+
+
+
+
+    {% for h in Qcl.question.all %}
+
+       
+         {{h.description}}</td>
+         {{h.user}}</td>
+       
+        <td>{{h.created_at}}</td>
+        
+     {% endfor %}
+
+</table>
+
+</center>
+{% endblock %}
